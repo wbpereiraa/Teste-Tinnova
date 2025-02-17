@@ -1,5 +1,6 @@
-Cadastro de Veículos API
+<h1 align="center">Cadastro de Veículos API
 API RESTful para gerenciamento de veículos, permitindo cadastro, atualização, exclusão e consultas detalhadas com base em diversos filtros. A API foi desenvolvida utilizando Java com Spring Boot e utiliza o banco de dados PostgreSQL para armazenamento dos veículos.
+</h1>
 
 Funcionalidades
 Cadastro de novos veículos
