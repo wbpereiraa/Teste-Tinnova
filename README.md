@@ -3,7 +3,7 @@
 API RESTful para gerenciamento de veículos, permitindo cadastro, atualização, exclusão e consultas detalhadas com base em diversos filtros. A API foi desenvolvida utilizando Java com Spring Boot e utiliza o banco de dados PostgreSQL para armazenamento dos veículos.
 
 
-##Funcionalidades
+## Funcionalidades
 
 Cadastro de novos veículos
 Atualização e exclusão de veículos
