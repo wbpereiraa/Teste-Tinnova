@@ -160,7 +160,7 @@ Exclui um veículo da base de dados.
 
 ## Funcionalidades Adicionais
 
-GET /veiculos/nao-vendidos
+** GET /veiculos/nao-vendidos
 
 Retorna a quantidade de veículos não vendidos.
 
