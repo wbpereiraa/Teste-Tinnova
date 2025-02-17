@@ -13,15 +13,12 @@ Distribuição de veículos por fabricante
 Exibição de veículos registrados na última semana
 Validação de marcas de veículos (evitando erros de digitação)
 
-Endpoints da API
+## Endpoints da API
 1. GET /veiculos
 Retorna todos os veículos cadastrados.
 
 Resposta:
-
-json
-Copiar
-Editar
+```
 [
   {
     "id": 1,
@@ -33,8 +30,8 @@ Editar
     "created": "2025-02-01T10:00:00",
     "updated": "2025-02-10T14:00:00"
   },
-  ...
 ]
+```
 2. GET /veiculos?marca={marca}&ano={ano}&cor={cor}
 Retorna todos os veículos filtrados de acordo com os parâmetros passados.
 
