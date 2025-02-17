@@ -157,12 +157,6 @@ Resposta:
 
 Exclui um veículo da base de dados.
 
-Resposta:
-```
-{
-  "message": "Veículo excluído com sucesso"
-}
-```
 
 ## Funcionalidades Adicionais
 
@@ -170,17 +164,21 @@ GET /veiculos/nao-vendidos
 
 Retorna a quantidade de veículos não vendidos.
 
+
 GET /veiculos/distribuicao-decada
 
 Retorna a distribuição de veículos por década de fabricação.
+
 
 GET /veiculos/distribuicao-marca
 
 Retorna a distribuição de veículos por fabricante.
 
+
 GET /veiculos/ultima-semana
 
 Retorna os veículos registrados durante a última semana.
+
 
 ## Regras de Validação
 
@@ -202,18 +200,25 @@ A API inclui testes unitários para garantir o bom funcionamento das operações
 Clone o repositório:
 
 bash
+
 Copiar
+
 Editar
-git clone https://github.com/usuario/cadastro-veiculos.git
-cd cadastro-veiculos
+
+git clone https://github.com/wbpereiraa/Teste-Tinnova.git
+
 Configure o banco de dados PostgreSQL.
 
 ## Execute o projeto com o comando:
 
 bash
+
 Copiar
+
 Editar
+
 ./mvnw spring-boot:run
+
 A API estará disponível em http://localhost:8080.
 
 ## Contribuindo
