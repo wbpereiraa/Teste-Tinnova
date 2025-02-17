@@ -58,6 +58,7 @@ cor (opcional)
 ```
 
 3. GET /veiculos/{id}
+
 Retorna os detalhes de um veículo específico.
 ```
 {
@@ -73,7 +74,7 @@ Retorna os detalhes de um veículo específico.
 ```
 
 4. POST /veiculos
-5. 
+
 Adiciona um novo veículo.
 
 Corpo da requisição:
@@ -85,8 +86,9 @@ Corpo da requisição:
   "descricao": "Veículo clássico",
   "vendido": false
 }
+```
 Resposta:
-
+```
 {
   "id": 1,
   "veiculo": "Fusca",
@@ -100,13 +102,11 @@ Resposta:
 ```
 
 5. PUT /veiculos/{id}
+
 Atualiza todos os dados de um veículo.
 
 Corpo da requisição:
-
-json
-Copiar
-Editar
+```
 {
   "veiculo": "Fusca",
   "marca": "Volkswagen",
@@ -114,11 +114,9 @@ Editar
   "descricao": "Veículo restaurado",
   "vendido": true
 }
+```
 Resposta:
-
-json
-Copiar
-Editar
+```
 {
   "id": 1,
   "veiculo": "Fusca",
@@ -129,22 +127,20 @@ Editar
   "created": "2025-02-01T10:00:00",
   "updated": "2025-02-17T15:00:00"
 }
+```
+
 6. PATCH /veiculos/{id}
+
 Atualiza parcialmente os dados de um veículo.
 
 Corpo da requisição:
-
-json
-Copiar
-Editar
+```
 {
   "descricao": "Veículo parcialmente restaurado"
 }
+```
 Resposta:
-
-json
-Copiar
-Editar
+```
 {
   "id": 1,
   "veiculo": "Fusca",
@@ -155,43 +151,54 @@ Editar
   "created": "2025-02-01T10:00:00",
   "updated": "2025-02-17T15:30:00"
 }
+```
+
 7. DELETE /veiculos/{id}
+
 Exclui um veículo da base de dados.
 
 Resposta:
-
-json
-Copiar
-Editar
+```
 {
   "message": "Veículo excluído com sucesso"
 }
-Funcionalidades Adicionais
+```
+
+## Funcionalidades Adicionais
+
 GET /veiculos/nao-vendidos
+
 Retorna a quantidade de veículos não vendidos.
 
 GET /veiculos/distribuicao-decada
+
 Retorna a distribuição de veículos por década de fabricação.
 
 GET /veiculos/distribuicao-marca
+
 Retorna a distribuição de veículos por fabricante.
 
 GET /veiculos/ultima-semana
+
 Retorna os veículos registrados durante a última semana.
 
-Regras de Validação
+## Regras de Validação
+
 As marcas devem ser consistentes e não podem ser inseridas com erros de digitação (ex.: "Volksvagen", "Forde", "Xevrolé" são inválidas).
-Testes
+
+## Testes
+
 A API inclui testes unitários para garantir o bom funcionamento das operações de CRUD e validação de dados.
 
-Tecnologias Utilizadas
-Java 17
-Spring Boot
-PostgreSQL
-JUnit
-Mockito
-Swagger (para documentação da API)
-Como Rodar
+## Tecnologias Utilizadas
+- [Java 17 ](https://www.java.com/pt-BR/download/manual.jsp)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [JUnit](https://junit.org/junit5/)
+- [Mockito](https://site.mockito.org/)
+- [Swagger](https://swagger.io/docs/)
+
+## Como Rodar
 Clone o repositório:
 
 bash
@@ -201,7 +208,7 @@ git clone https://github.com/usuario/cadastro-veiculos.git
 cd cadastro-veiculos
 Configure o banco de dados PostgreSQL.
 
-Execute o projeto com o comando:
+## Execute o projeto com o comando:
 
 bash
 Copiar
@@ -209,5 +216,5 @@ Editar
 ./mvnw spring-boot:run
 A API estará disponível em http://localhost:8080.
 
-Contribuindo
+## Contribuindo
 Contribuições são bem-vindas! Se você deseja melhorar a API ou corrigir um erro, abra um pull request.
