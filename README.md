@@ -18,7 +18,6 @@ Validação de marcas de veículos (evitando erros de digitação)
 
 Retorna todos os veículos cadastrados.
 
-Resposta:
 ```
 [
   {
@@ -33,7 +32,9 @@ Resposta:
   },
 ]
 ```
+
 2. GET /veiculos?marca={marca}&ano={ano}&cor={cor}
+
 Retorna todos os veículos filtrados de acordo com os parâmetros passados.
 
 Parâmetros de consulta:
@@ -41,11 +42,7 @@ Parâmetros de consulta:
 marca (opcional)
 ano (opcional)
 cor (opcional)
-Resposta:
-
-json
-Copiar
-Editar
+```
 [
   {
     "id": 1,
@@ -58,14 +55,11 @@ Editar
     "updated": "2025-02-10T14:00:00"
   }
 ]
+```
+
 3. GET /veiculos/{id}
 Retorna os detalhes de um veículo específico.
-
-Resposta:
-
-json
-Copiar
-Editar
+```
 {
   "id": 1,
   "veiculo": "Fusca",
@@ -76,14 +70,14 @@ Editar
   "created": "2025-02-01T10:00:00",
   "updated": "2025-02-10T14:00:00"
 }
+```
+
 4. POST /veiculos
+5. 
 Adiciona um novo veículo.
 
 Corpo da requisição:
-
-json
-Copiar
-Editar
+```
 {
   "veiculo": "Fusca",
   "marca": "Volkswagen",
@@ -93,9 +87,6 @@ Editar
 }
 Resposta:
 
-json
-Copiar
-Editar
 {
   "id": 1,
   "veiculo": "Fusca",
@@ -106,6 +97,8 @@ Editar
   "created": "2025-02-01T10:00:00",
   "updated": "2025-02-01T10:00:00"
 }
+```
+
 5. PUT /veiculos/{id}
 Atualiza todos os dados de um veículo.
 
