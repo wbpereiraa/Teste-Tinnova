@@ -15,6 +15,7 @@ Validação de marcas de veículos (evitando erros de digitação)
 
 ## Endpoints da API
 1. GET /veiculos
+
 Retorna todos os veículos cadastrados.
 
 Resposta:
