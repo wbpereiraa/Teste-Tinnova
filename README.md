@@ -3,7 +3,7 @@
 Este repositório contém alguns testes simples como um algoritmo de Simulação de votos, algoritmo de ordenação Bubble Sort, cálculo de fatorial, soma de multiplos e uma API RESTful para gerenciamento de veículos, permitindo cadastro, atualização, exclusão e consultas detalhadas com base em diversos filtros. A API foi desenvolvida utilizando Java com Spring Boot e utiliza o banco de dados PostgreSQL para armazenamento dos veículos.
 
 
-## Funcionalidades
+## Funcionalidades da API
 
 Cadastro de novos veículos
 Atualização e exclusão de veículos
